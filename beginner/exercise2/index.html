@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Master - Exercise 2</title>
+
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./calc.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <p class="result-text">0</p>
+        <div class="container-row">
+            <button class="btn medium">C</button>
+            <button class="btn small">&#x2190;</button>
+            <button class="btn btn-action small">&#x00F7;</button>
+        </div>
+        <div class="container-row">
+            <button class="btn small">7</button>
+            <button class="btn small">8</button>
+            <button class="btn small">9</button>
+            <button class="btn btn-action small">&#x00D7;</button>
+        </div>
+        <div class="container-row">
+            <button class="btn small">4</button>
+            <button class="btn small">5</button>
+            <button class="btn small">6</button>
+            <button class="btn btn-action small">&#x002D;</button>
+        </div>
+        <div class="container-row">
+            <button class="btn small">1</button>
+            <button class="btn small">2</button>
+            <button class="btn small">3</button>
+            <button class="btn btn-action small">&#x002B;</button>
+        </div>
+        <div class="container-row">
+            <button class="btn large">0</button>
+            <button class="btn btn-action small">&#x003D;</button>
+        </div>
+    </div>
+</body>
+<script>
+    let eResult = document.querySelector(".result-text");
+
+    document.querySelector(".container").addEventListener('click', function (event) {
+        if (event.target.tagName === 'BUTTON') {
+            const ch = event.target.innerText;
+            btnClicked(ch, eResult);
+        }
+    });
+</script>
+
+</html>
