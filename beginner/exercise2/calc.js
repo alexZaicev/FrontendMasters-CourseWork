@@ -49,6 +49,12 @@ function btnClicked(ch, eResult) {
     if (ch === '\u002B') {
         onActionClicked(ADD);
     }
+
+    // backspace
+    eResult.innerText = eResult.innerText.substring(0, eResult.innerText.length - 1)
+    if (eResult.innerText.length === 0) {
+        eResult.innerText = '0'
+    }
 }
 
 function onActionClicked(action) {
