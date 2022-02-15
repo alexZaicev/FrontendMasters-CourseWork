@@ -5,6 +5,14 @@ const DIV = 'div';
 
 let currentAction = '';
 let savedArg = '0';
+let eResult = document.querySelector(".result-text");
+
+document.querySelector(".container").addEventListener('click', function (event) {
+    if (event.target.tagName === 'BUTTON') {
+        const ch = event.target.innerText;
+        btnClicked(ch, eResult);
+    }
+});
 
 // btnClicked function decides what action needs to be performed
 // based on the ch string. After decided action is completed it

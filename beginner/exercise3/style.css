@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 50px 0 0 0;
+}
+
+.title {
+    text-align: center;
+    font-size: 72px;
+    font-weight: 900;
+    margin: 25px 0;
+    padding: 0;
+}
+
+.container {
+    margin: auto;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-row {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.err-msg {
+    font-size: 14px;
+    font-weight: 700;
+    color: red;
+    margin: 0 0 15px 0;
+    padding: 0;
+}
+
+.doggo-img {
+    width: 100%;
+    margin: 15px 0;
+    border: solid grey 1px;
+    border-radius: 7%;
+}
+
+.breed-selector-lbl {
+    font-size: 19px;
+    font-weight: 600;
+    margin-right: 15px;
+}
+
+.breed-selector {
+    font-size: 15px;
+    width: 45%;
+}
+
+.btn {
+    width: 65%;
+    height: 15%;
+    border: solid black 1px;
+    border-radius: 5px;
+    font-size: 22px;
+    font-style: bold;
+    margin-top: 15px;
+}
+
+.loading-img {
+    width: 30%;
+}
