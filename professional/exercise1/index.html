@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./sidenav.css" />
+    <link rel="stylesheet" href="./app-bar.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidenav">
+            <div class="sidenav-head">
+                <span class="fa-solid fa-id-card" aria-hidden="true">
+                    <span class="sr-only">Logo</span>
+                </span>
+                <h2 class="sidenav-title">AdminAPP</h2>
+            </div>
+            <ul class="sidenav-list">
+                <li class="sidenav-list-item">
+                    <a href="#">
+                        <span class="fa-solid fa-chart-line" aria-hidden="true">
+                            <span class="sr-only">Dashboard</span>
+                        </span>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li class="sidenav-list-item">
+                    <a href="#">
+                        <span class="fa-solid fa-sliders" aria-hidden="true">
+                            <span class="sr-only">Realms</span>
+                        </span>
+                        <span>Realms</span>
+                    </a>
+                </li>
+                <li class="sidenav-list-item">
+                    <a href="#">
+                        <span class="fa-solid fa-id-badge" aria-hidden="true">
+                            <span class="sr-only">Roles</span>
+                        </span>
+                        <span>Roles</span>
+                    </a>
+                </li>
+                <li class="sidenav-list-item">
+                    <a href="#">
+                        <span class="fa-solid fa-id-card-clip" aria-hidden="true">
+                            <span class="sr-only">Role Groups</span>
+                        </span>
+                        <span>Role Groups</span>
+                    </a>
+                </li>
+                <li class="sidenav-list-item">
+                    <a href="#">
+                        <span class="fa-solid fa-users" aria-hidden="true">
+                            <span class="sr-only">Users</span>
+                        </span>
+                        <span>Users</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="sidenav-last-item">
+                <a href="#" class="sidenav-btn">
+                    <span class="fa-solid fa-chevron-left" aria-hidden="true">
+                        <span class="sr-only">Close</span>
+                    </span>
+                </a>
+            </div>
+        </div>
+        <!-- Page Content -->
+        <div class="content">
+            <div class="app-bar">
+                <a href="#" class="app-bar-btn">
+                    <span class="fa-solid fa-bars" aria-hidden="true">
+                        <span class="sr-only">Menu</span>
+                    </span>
+                </a>
+                <ul class="app-bar-action-list">
+                    <li>
+                        <a href="#">
+                            <span class="fa-solid fa-bell" aria-hidden="true">
+                                    <span class="sr-only">Alerts</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="fa-solid fa-gear" aria-hidden="true">
+                                    <span class="sr-only">Settings</span>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="content">
+                <h1>Hello world</h1>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector(".app-bar-btn").addEventListener("click", e => {
+            document.querySelector(".sidenav").style.left = "0";
+            document.body.style.backgroundColor = "var(--shadow)";
+        });
+        document.querySelector(".sidenav-btn").addEventListener("click", e => {
+            document.querySelector(".sidenav").style.left = "-250px";
+            document.body.style.backgroundColor = "var(--black)";
+        });
+    </script>
+    <script src="https://kit.fontawesome.com/2f0226a0ab.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
